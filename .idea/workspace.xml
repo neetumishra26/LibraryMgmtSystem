@@ -61,13 +61,23 @@
       <file leaf-file-name="StartApp.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/code/StartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="6" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.9495614">
+            <state line="143" column="38" selection-start="4652" selection-end="4652" vertical-scroll-proportion="4.240066">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#727#733#0" expanded="true" />
                 <element signature="e#830#839#0" expanded="true" />
-                <element signature="e#2038#2044#0" expanded="true" />
+                <element signature="e#2044#2053#0" expanded="true" />
+                <element signature="e#3201#3207#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/code/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="13" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,14 +85,13 @@
       <file leaf-file-name="LibraryTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="2763" selection-end="2763" vertical-scroll-proportion="0.0">
+            <state line="17" column="21" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#384#390#0" expanded="true" />
                 <element signature="e#451#460#0" expanded="true" />
                 <element signature="e#1035#1041#0" expanded="true" />
                 <element signature="e#1435#1444#0" expanded="true" />
-                <element signature="e#1949#1958#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +100,7 @@
       <file leaf-file-name="Library.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/code/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="4" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
+            <state line="44" column="30" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#268#274#0" expanded="true" />
                 <element signature="e#335#341#0" expanded="true" />
@@ -101,13 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/Menu.java">
+      <file leaf-file-name="MenuTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/MenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="31" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#271#279#0" expanded="true" />
-              </folding>
+            <state line="54" column="36" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,15 +136,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/StartApp.java" />
         <option value="$PROJECT_DIR$/src/test/StudentTest.java" />
-        <option value="$PROJECT_DIR$/src/test/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/code/Book.java" />
         <option value="$PROJECT_DIR$/src/test/BookTest.java" />
         <option value="$PROJECT_DIR$/src/code/Student.java" />
         <option value="$PROJECT_DIR$/src/code/ChoiceReader.java" />
         <option value="$PROJECT_DIR$/src/test/ChoiceReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/code/Menu.java" />
-        <option value="$PROJECT_DIR$/src/test/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/code/Library.java" />
+        <option value="$PROJECT_DIR$/src/test/LibraryTest.java" />
+        <option value="$PROJECT_DIR$/src/code/Menu.java" />
+        <option value="$PROJECT_DIR$/src/test/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/code/StartApp.java" />
       </list>
     </option>
@@ -281,6 +288,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -293,28 +301,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.StartApp">
-    <configuration default="false" name="LibraryTest.testShouldReturnTrueIfStudentIsRegisteredElseFalse" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="LibraryMgmtSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LibraryTest" />
-      <option name="METHOD_NAME" value="testShouldReturnTrueIfStudentIsRegisteredElseFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="StartApp" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="code.StartApp" />
       <option name="VM_PARAMETERS" />
@@ -387,6 +373,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LibraryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MenuTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="LibraryMgmtSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MenuTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -521,11 +529,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LibraryTest.testShouldReturnTrueIfStudentIsRegisteredElseFalse" />
-      <item index="1" class="java.lang.String" itemvalue="Application.StartApp" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryTest.testShouldReserveExistingBookOnly" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LibraryTest.testShouldReserveBookOnlyOnce" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LibraryTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.StartApp" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LibraryTest.testShouldReserveExistingBookOnly" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryTest.testShouldReserveBookOnlyOnce" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LibraryTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -558,7 +566,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946581" sideWeight="0.67164177" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -638,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/BookTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="5" selection-start="336" selection-end="429" vertical-scroll-proportion="0.0">
@@ -655,13 +656,6 @@
     <entry file="file://$PROJECT_DIR$/src/code/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -712,9 +706,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#271#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="36" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/code/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="4" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
+        <state line="44" column="30" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#268#274#0" expanded="true" />
             <element signature="e#335#341#0" expanded="true" />
@@ -723,37 +733,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="13" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="2763" selection-end="2763" vertical-scroll-proportion="0.0">
+        <state line="17" column="21" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#384#390#0" expanded="true" />
             <element signature="e#451#460#0" expanded="true" />
             <element signature="e#1035#1041#0" expanded="true" />
             <element signature="e#1435#1444#0" expanded="true" />
-            <element signature="e#1949#1958#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#271#279#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/code/StartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="6" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.9495614">
+        <state line="143" column="38" selection-start="4652" selection-end="4652" vertical-scroll-proportion="4.240066">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#727#733#0" expanded="true" />
             <element signature="e#830#839#0" expanded="true" />
-            <element signature="e#2038#2044#0" expanded="true" />
+            <element signature="e#2044#2053#0" expanded="true" />
+            <element signature="e#3201#3207#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -45,9 +45,39 @@ public class StartApp {
         else if (menuSelection == 3)
             addBooks();
         else if (menuSelection == 4)
+            printAllStudent();
+        else if (menuSelection == 5)
+            registerStudent();
+        else if (menuSelection == 0)
             System.exit(0);
         else
         System.out.println("Enter a valid integer!!");
+    }
+
+    private static void registerStudent() {
+        ArrayList<Student> studentList = createStudent();
+        library.registerMoreStudents(studentList);
+    }
+
+    private static void printAllStudent() {
+        for (Student student:library.getAllRegisteredStudents()){
+            System.out.println("Name : " + student.getFullName() + " Card Number : " + student.getLibraryCardNumber());
+        }
+    }
+
+    private static ArrayList<Student> createStudent() {
+        ArrayList<Student> students = new ArrayList<Student>();
+        char choice;
+        do{
+            System.out.println("Enter First Name");
+            String firstName = getSelectionFromUser();
+            System.out.println("Enter Last Name");
+            String lastName = getSelectionFromUser();
+            students.add(new Student(firstName,lastName));
+            System.out.println("Do you register more students? Y or N : ");
+            choice = getSelectionFromUser().charAt(0);
+        } while (choice == 'Y');
+        return students;
     }
 
     private static void reserveBook() {
@@ -109,8 +139,9 @@ public class StartApp {
     }
 
     private static void initializeStudents(ArrayList<Student> registeredStudents) {
-        registeredStudents.add(new Student("Neetu","Neetu"));
-        registeredStudents.add(new Student("Mishra","Mishra"));
+        Student student = new Student("Neetu","Mishra");
+        student.setLibraryCardNumber("1");
+        registeredStudents.add(student);
     }
 
     private static void initializeBooks(ArrayList<Book> books) {
@@ -123,7 +154,7 @@ public class StartApp {
     private static void showFormattedMenu(ArrayList<String> menuList) {
         System.out.println();
         for (int i = 0; i < menuList.size(); i++) {
-            System.out.println("Enter " + (i+1) + " to " + menuList.get(i));
+            System.out.println("Enter " + i + " to " + menuList.get(i));
         }
         System.out.println("Enter your choice : ");
     }
