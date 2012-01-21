@@ -1,0 +1,11 @@
+On starting app user will see this menu:
+
+Enter 0 to Exit
+Enter 1 to View all available book
+Enter 2 to Reserve book
+Enter 3 to Add books
+Enter 4 to View all registered Student
+Enter 5 to Register Student
+Enter your choice :
+
+Operation will be performed on the basis of choice selected.

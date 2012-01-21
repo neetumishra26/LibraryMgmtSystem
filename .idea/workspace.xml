@@ -58,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StartApp.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StartApp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/code/StartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="38" selection-start="4652" selection-end="4652" vertical-scroll-proportion="4.240066">
+            <state line="94" column="24" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#727#733#0" expanded="true" />
@@ -73,10 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/code/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="44" selection-start="311" selection-end="549" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#271#279#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/code/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="13" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+            <state line="49" column="13" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.74834436">
               <folding />
             </state>
           </provider>
@@ -85,7 +96,7 @@
       <file leaf-file-name="LibraryTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
+            <state line="71" column="0" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#384#390#0" expanded="true" />
@@ -100,7 +111,7 @@
       <file leaf-file-name="Library.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/code/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="30" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
+            <state line="58" column="4" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#268#274#0" expanded="true" />
                 <element signature="e#335#341#0" expanded="true" />
@@ -141,11 +152,12 @@
         <option value="$PROJECT_DIR$/src/code/Student.java" />
         <option value="$PROJECT_DIR$/src/code/ChoiceReader.java" />
         <option value="$PROJECT_DIR$/src/test/ChoiceReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/code/Library.java" />
-        <option value="$PROJECT_DIR$/src/test/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/code/Menu.java" />
         <option value="$PROJECT_DIR$/src/test/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/code/StartApp.java" />
+        <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/src/test/LibraryTest.java" />
+        <option value="$PROJECT_DIR$/src/code/Library.java" />
       </list>
     </option>
   </component>
@@ -630,13 +642,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-6-sun/jre/lib/rt.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/StudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="46" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
@@ -706,15 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#271#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/MenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="36" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0">
@@ -722,27 +718,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/Library.java">
+    <entry file="file://$PROJECT_DIR$/src/code/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="30" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
+        <state line="21" column="44" selection-start="311" selection-end="549" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#268#274#0" expanded="true" />
-            <element signature="e#335#341#0" expanded="true" />
-            <element signature="e#410#419#0" expanded="true" />
+            <element signature="e#271#279#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/Student.java">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+        <state line="10" column="60" selection-start="286" selection-end="286" vertical-scroll-proportion="0.31456953">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
+        <state line="71" column="0" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#384#390#0" expanded="true" />
@@ -755,7 +749,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/code/StartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="38" selection-start="4652" selection-end="4652" vertical-scroll-proportion="4.240066">
+        <state line="94" column="24" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#727#733#0" expanded="true" />
@@ -763,6 +757,24 @@
             <element signature="e#2044#2053#0" expanded="true" />
             <element signature="e#3201#3207#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="4" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#268#274#0" expanded="true" />
+            <element signature="e#335#341#0" expanded="true" />
+            <element signature="e#410#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="13" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.74834436">
+          <folding />
         </state>
       </provider>
     </entry>
