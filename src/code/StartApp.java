@@ -20,10 +20,11 @@ public class StartApp {
 
         Menu menu = new Menu();
         ArrayList<String> menuList = menu.getMenu();
-        showFormattedMenu(menuList);
 
-        performMenuSelection();
-
+        while (true){
+            showFormattedMenu(menuList);
+            performMenuSelection();
+        }
 
     }
 
@@ -36,17 +37,37 @@ public class StartApp {
     }
 
     private static void performMenuSelection() {
-        int menuSelection = getSelectionFromUser();
+        int menuSelection = getSelectionFromUserAsInteger();
         if (menuSelection == 1)
             printBookCatalog();
 //        else if (menuSelection == 2)
 //            reserveBook();
-//        else if (menuSelection == 3)
-//            addBook();
+        else if (menuSelection == 3)
+            addBooks();
         else if (menuSelection == 4)
             System.exit(0);
         else
         System.out.println("Enter a valid integer!!");
+    }
+
+    private static void addBooks() {
+        ArrayList<Book> bookList = getBookDetails();
+        library.addBooks(bookList);
+    }
+
+    private static ArrayList<Book> getBookDetails() {
+        ArrayList<Book> books = new ArrayList<Book>();
+        char choice;
+        do{
+            System.out.println("Enter Book Name");
+            String bookName = getSelectionFromUser();
+            System.out.println("Enter Author's Name");
+            String authorName = getSelectionFromUser();
+            books.add(new Book(bookName,authorName));
+            System.out.println("Do you want to continue? Y or N : ");
+            choice = getSelectionFromUser().charAt(0);
+        } while (choice == 'Y');
+        return books;
     }
 
     private static void printBookCatalog() {
@@ -55,18 +76,23 @@ public class StartApp {
         }
     }
 
-    private static int getSelectionFromUser() {
+    private static int getSelectionFromUserAsInteger() {
+        if (getSelectionFromUser() == null)
+            return 0;
+        return Integer.parseInt(getSelectionFromUser());
+    }
+
+    private static String getSelectionFromUser(){
         String input = null ;
         try
         {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             input = br.readLine() ;
-            return Integer.parseInt(input);
         }
         catch (IOException e) {
             System.out.println("Error: " + e);
         }
-        return 0;
+        return input;
     }
 
     private static void initializeStudents(ArrayList<Student> registeredStudents) {
@@ -82,6 +108,7 @@ public class StartApp {
     }
 
     private static void showFormattedMenu(ArrayList<String> menuList) {
+        System.out.println();
         for (int i = 0; i < menuList.size(); i++) {
             System.out.println("Enter " + (i+1) + " to " + menuList.get(i));
         }

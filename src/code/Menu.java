@@ -16,7 +16,7 @@ public class Menu {
     public Menu(){
         menuCard.add("View all available book");
         menuCard.add("Reserve book");
-        menuCard.add("Add book");
+        menuCard.add("Add books");
         menuCard.add("Exit");
     }
 
