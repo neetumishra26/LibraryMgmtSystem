@@ -48,7 +48,7 @@ public class Library {
         for (Student regStudent: registeredStudents){
             if(regStudent.equals(student)){
                 return true;
-            }                                                     notify()
+            }
         }
         return false;
     }
