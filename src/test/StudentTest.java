@@ -28,9 +28,9 @@ public class StudentTest {
 
     @Test
     public void testShouldCheckForLibraryCard(){
-        Assert.assertTrue(student.isLibraryNotCardAssigned());
+        Assert.assertTrue(student.isLibraryCardNotAssigned());
         student.setLibraryCardNumber("123");
-        Assert.assertFalse(student.isLibraryNotCardAssigned());
+        Assert.assertFalse(student.isLibraryCardNotAssigned());
         Assert.assertEquals("123", student.getLibraryCardNumber());
     }
 

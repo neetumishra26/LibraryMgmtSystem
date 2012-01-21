@@ -40,7 +40,7 @@ public class Student {
         return libraryCardNumber;
     }
 
-    public boolean isLibraryNotCardAssigned(){
+    public boolean isLibraryCardNotAssigned(){
         return libraryCardNumber.equals("");
     }
 

@@ -11,9 +11,11 @@ import java.util.ArrayList;
  */
 public class Library {
     private ArrayList<Book> books = new ArrayList<Book>();
+    private ArrayList<Student> registeredStudents = new ArrayList<Student>();
 
-    public Library(ArrayList<Book> books){
+    public Library(ArrayList<Book> books, ArrayList<Student> registeredStudents){
         this.books = books;
+        this.registeredStudents = registeredStudents;
     }
 
     public ArrayList<Book> getAllBooks() {
@@ -21,9 +23,33 @@ public class Library {
     }
 
     public void addBooks(ArrayList<Book> bookList){
-        for(int i=0; i<bookList.size(); i++){
-            this.books.add(bookList.get(i));
+        for (Book book: bookList){
+            this.books.add(book);
         }
     }
 
+    public void registerMoreStudents(ArrayList<Student> studentList) {
+        for (Student student: studentList){
+            assignLibraryCardNumberToStudent(student);
+            this.registeredStudents.add(student);
+        }
+    }
+
+    private void assignLibraryCardNumberToStudent(Student student) {
+        int count = this.registeredStudents.size() + 1;
+        student.setLibraryCardNumber(Integer.toString(count));
+    }
+
+    public ArrayList<Student> getAllRegisteredStudents() {
+        return registeredStudents;
+    }
+
+    public boolean is_registered_student(Student student) {
+        for (Student regStudent: registeredStudents){
+            if(regStudent.equals(student)){
+                return true;
+            }                                                     notify()
+        }
+        return false;
+    }
 }

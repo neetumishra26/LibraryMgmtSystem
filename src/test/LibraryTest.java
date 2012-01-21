@@ -1,5 +1,6 @@
 import code.Book;
 import code.Library;
+import code.Student;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,6 +16,8 @@ import java.util.ArrayList;
 
 public class LibraryTest {
     ArrayList<Book> books = new ArrayList<Book>();
+    ArrayList<Student> registeredStudents = new ArrayList<Student>();
+
     Library myLibrary;
 
     public LibraryTest(){}
@@ -23,7 +26,7 @@ public class LibraryTest {
     public void setUp() {
         books.add(new Book("Clean code vol1", "Kent Back"));
         books.add(new Book("Clean code vol2", "Kent Back"));
-        myLibrary = new Library(books);
+        myLibrary = new Library(books, registeredStudents);
     }
 
     @Test
@@ -39,5 +42,29 @@ public class LibraryTest {
         bookList.add(new Book("Clean code vol4", "Kent Back"));
         myLibrary.addBooks(bookList);
         Assert.assertEquals(4, myLibrary.getAllBooks().size());
+    }
+
+    @Test
+    public void test_Should_Register_Students_In_Library_And_assign_them_lib_card_number(){
+        ArrayList<Student> students = new ArrayList<Student>();
+        students.add(new Student("Neetu","Mishra"));
+
+        myLibrary.registerMoreStudents(students);
+
+        Assert.assertEquals(1, myLibrary.getAllRegisteredStudents().size());
+        Student student_with_new_library_card = myLibrary.getAllRegisteredStudents().get(0);
+        Assert.assertEquals("1", student_with_new_library_card.getLibraryCardNumber());
+    }
+
+    @Test
+    public void testShouldReturnTrueIfStudentIsRegisteredElseFalse(){
+        ArrayList<Student> students = new ArrayList<Student>();
+        Student student = new Student("Neetu", "Mishra");
+        Assert.assertFalse(myLibrary.is_registered_student(student));
+
+        students.add(student);
+        myLibrary.registerMoreStudents(students);
+
+        Assert.assertTrue(myLibrary.is_registered_student(student));
     }
 }
