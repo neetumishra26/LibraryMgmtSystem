@@ -26,22 +26,22 @@ public class MenuTest {
 
     @Test
     public void testMenuShouldContainOptionToViewAllBook(){
-        Assert.assertEquals("Press 1 to View all available book",myMenu.getMenu().get(0));
+        Assert.assertEquals("View all available book",myMenu.getMenu().get(0));
     }
 
     @Test
     public void testMenuShouldContainOptionToReserveBook(){
-        Assert.assertEquals("Press 2 to Reserve book",myMenu.getMenu().get(1));
+        Assert.assertEquals("Reserve book",myMenu.getMenu().get(1));
     }
 
     @Test
     public void testMenuShouldContainOptionToAddBook(){
-        Assert.assertEquals("Press 3 to Add book",myMenu.getMenu().get(2));
+        Assert.assertEquals("Add book",myMenu.getMenu().get(2));
     }
 
     @Test
     public void testMenuShouldContainOptionToExit(){
-        Assert.assertEquals("Press 0 to Exit",myMenu.getMenu().get(3));
+        Assert.assertEquals("Exit",myMenu.getMenu().get(3));
     }
 
 }
