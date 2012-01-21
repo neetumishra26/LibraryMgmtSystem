@@ -15,10 +15,8 @@ public class StudentTest {
     Student adminStudent;
 
     @Before
-    public void setUp()
-    {
+    public void setUp(){
         student = new Student("Neetu","Mishra");
-        adminStudent = new Student("abc","xyz", true);
     }
 
     @Test
@@ -32,12 +30,6 @@ public class StudentTest {
         student.setLibraryCardNumber("123");
         Assert.assertFalse(student.isLibraryCardNotAssigned());
         Assert.assertEquals("123", student.getLibraryCardNumber());
-    }
-
-    @Test
-    public void testShouldCheckForAdminRights(){
-        Assert.assertTrue(adminStudent.isAdminRights());
-        Assert.assertFalse(student.isAdminRights());
     }
 
 }

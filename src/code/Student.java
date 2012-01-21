@@ -11,20 +11,11 @@ public class Student {
     private String firstName;
     private String lastName;
     private String libraryCardNumber;
-    private boolean isAdmin;
 
     public Student(String fname, String lname) {
         this.firstName = fname;
         this.lastName = lname;
         this.libraryCardNumber = "";
-        this.isAdmin = false;
-    }
-
-    public Student(String fname, String lname, boolean isAdmin) {
-        this.firstName = fname;
-        this.lastName = lname;
-        this.libraryCardNumber = "";
-        this.isAdmin = isAdmin;
     }
 
     public String getFullName() {
@@ -44,8 +35,4 @@ public class Student {
         return libraryCardNumber.equals("");
     }
 
-
-    public boolean isAdminRights() {
-        return isAdmin;
-    }
 }
