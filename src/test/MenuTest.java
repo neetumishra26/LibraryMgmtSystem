@@ -25,23 +25,33 @@ public class MenuTest {
     }
 
     @Test
+    public void testMenuShouldContainOptionToExit(){
+        Assert.assertEquals("Exit",myMenu.getMenu().get(0));
+    }
+
+    @Test
     public void testMenuShouldContainOptionToViewAllBook(){
-        Assert.assertEquals("View all available book",myMenu.getMenu().get(0));
+        Assert.assertEquals("View all available book",myMenu.getMenu().get(1));
     }
 
     @Test
     public void testMenuShouldContainOptionToReserveBook(){
-        Assert.assertEquals("Reserve book",myMenu.getMenu().get(1));
+        Assert.assertEquals("Reserve book",myMenu.getMenu().get(2));
     }
 
     @Test
     public void testMenuShouldContainOptionToAddBook(){
-        Assert.assertEquals("Add book",myMenu.getMenu().get(2));
+        Assert.assertEquals("Add books",myMenu.getMenu().get(3));
     }
 
     @Test
-    public void testMenuShouldContainOptionToExit(){
-        Assert.assertEquals("Exit",myMenu.getMenu().get(3));
+    public void testMenuShouldContainOptionToViewAllRegisteredStudent(){
+        Assert.assertEquals("View all registered Student",myMenu.getMenu().get(4));
+    }
+
+    @Test
+    public void testMenuShouldContainOptionToRegisterUser(){
+        Assert.assertEquals("Register Student",myMenu.getMenu().get(5));
     }
 
 }

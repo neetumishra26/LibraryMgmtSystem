@@ -14,10 +14,12 @@ public class Menu {
     private ArrayList<String> menuCard = new ArrayList<String>();
 
     public Menu(){
+        menuCard.add("Exit");
         menuCard.add("View all available book");
         menuCard.add("Reserve book");
         menuCard.add("Add books");
-        menuCard.add("Exit");
+        menuCard.add("View all registered Student");
+        menuCard.add("Register Student");
     }
 
     public ArrayList<String> getMenu() {
