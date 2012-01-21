@@ -21,12 +21,12 @@ public class BookTest {
 
     @Before
     public void setUp() {
-        myBook = new Book("Clean code", "By Kent Back");
+        myBook = new Book("Clean code", "Kent Back");
     }
 
     @Test
     public void testShouldReturnBookFullName()
     {
-        Assert.assertEquals("Clean code By Kent Back", myBook.getBookFullName());
+        Assert.assertEquals("Clean code by Kent Back", myBook.getBookFullName());
     }
 }

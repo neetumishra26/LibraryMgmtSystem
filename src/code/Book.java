@@ -25,7 +25,7 @@ public class Book {
     }
 
     private String full_name(){
-        return this.name + " " + this.author;
+        return this.name + " by " + this.author;
     }
 
 }
