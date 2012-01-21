@@ -58,18 +58,6 @@ public class LibraryTest {
     }
 
     @Test
-    public void testShouldReturnTrueIfStudentIsRegisteredElseFalse(){
-        ArrayList<Student> students = new ArrayList<Student>();
-        Student student = new Student("Neetu", "Mishra");
-        Assert.assertFalse(myLibrary.is_registered_student(student));
-
-        students.add(student);
-        myLibrary.registerMoreStudents(students);
-
-        Assert.assertTrue(myLibrary.is_registered_student(student));
-    }
-
-    @Test
     public void testShouldReserveExistingBookOnly(){
         Book existing_book = myLibrary.getAllBooks().get(0);
         Book non_existing_book = new Book("ABC", "Kent Back");

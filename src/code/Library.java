@@ -45,15 +45,6 @@ public class Library {
         return registeredStudents;
     }
 
-    public boolean is_registered_student(Student student) {
-        for (Student regStudent: registeredStudents){
-            if(regStudent.equals(student)){
-                return true;
-            }
-        }
-        return false;
-    }
-
     public boolean reserveBook(Book book) {
         for (Book regBook: books){
             if(regBook.equals(book)){
