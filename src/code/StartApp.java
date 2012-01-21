@@ -51,7 +51,15 @@ public class StartApp {
     }
 
     private static void reserveBook() {
-
+        printBookCatalog();
+        System.out.println("Enter Book Number");
+        int bookNumber = getSelectionFromUserAsInteger() - 1;
+        if (library.reserveBook(library.getAllBooks().get(bookNumber))){
+            System.out.println("Book Successfully reserved");
+        }
+        else{
+            System.out.println("Book already reserved");
+        }
     }
 
     private static void addBooks() {
@@ -81,9 +89,10 @@ public class StartApp {
     }
 
     private static int getSelectionFromUserAsInteger() {
-        if (getSelectionFromUser() == null)
+        String userInput = getSelectionFromUser();
+        if (userInput == null)
             return 0;
-        return Integer.parseInt(getSelectionFromUser());
+        return Integer.parseInt(userInput);
     }
 
     private static String getSelectionFromUser(){
