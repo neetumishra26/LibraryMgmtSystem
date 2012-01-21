@@ -11,6 +11,7 @@ import java.util.ArrayList;
  */
 public class Library {
     private ArrayList<Book> books = new ArrayList<Book>();
+    private ArrayList<Book> reservedBooks = new ArrayList<Book>();
     private ArrayList<Student> registeredStudents = new ArrayList<Student>();
 
     public Library(ArrayList<Book> books, ArrayList<Student> registeredStudents){
@@ -52,4 +53,17 @@ public class Library {
         }
         return false;
     }
+
+    public boolean reserveBook(Book book) {
+        for (Book regBook: books){
+            if(regBook.equals(book)){
+                if(!reservedBooks.contains(book)){
+                    reservedBooks.add(book);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

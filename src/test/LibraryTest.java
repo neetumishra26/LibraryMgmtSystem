@@ -4,6 +4,7 @@ import code.Student;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 import java.util.ArrayList;
 
 /**
@@ -67,4 +68,20 @@ public class LibraryTest {
 
         Assert.assertTrue(myLibrary.is_registered_student(student));
     }
+
+    @Test
+    public void testShouldReserveExistingBookOnly(){
+        Book existing_book = myLibrary.getAllBooks().get(0);
+        Book non_existing_book = new Book("ABC", "Kent Back");
+        Assert.assertTrue(myLibrary.reserveBook(existing_book));
+        Assert.assertFalse(myLibrary.reserveBook(non_existing_book));
+    }
+
+    @Test
+    public void testShouldReserveBookOnlyOnce(){
+        Book existing_book = myLibrary.getAllBooks().get(0);
+        Assert.assertTrue(myLibrary.reserveBook(existing_book));
+        Assert.assertFalse(myLibrary.reserveBook(existing_book));
+    }
+
 }

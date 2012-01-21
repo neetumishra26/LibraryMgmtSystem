@@ -40,14 +40,18 @@ public class StartApp {
         int menuSelection = getSelectionFromUserAsInteger();
         if (menuSelection == 1)
             printBookCatalog();
-//        else if (menuSelection == 2)
-//            reserveBook();
+        else if (menuSelection == 2)
+            reserveBook();
         else if (menuSelection == 3)
             addBooks();
         else if (menuSelection == 4)
             System.exit(0);
         else
         System.out.println("Enter a valid integer!!");
+    }
+
+    private static void reserveBook() {
+
     }
 
     private static void addBooks() {
